@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51635609276C77D6007C5CF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51635608276C77D6007C5CF9 /* WebKit.framework */; };
 		517242902463901F00747ABE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5172428F2463901F00747ABE /* AppDelegate.m */; };
 		517242932463901F00747ABE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 517242922463901F00747ABE /* SceneDelegate.m */; };
 		517242962463901F00747ABE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517242952463901F00747ABE /* ViewController.m */; };
@@ -16,6 +17,8 @@
 		517242A12463902000747ABE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 517242A02463902000747ABE /* main.m */; };
 		517242AB2463902000747ABE /* makeFragmentContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 517242AA2463902000747ABE /* makeFragmentContainerTests.m */; };
 		517242B62463902000747ABE /* makeFragmentContainerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 517242B52463902000747ABE /* makeFragmentContainerUITests.m */; };
+		517242C7246398A300747ABE /* Firstcontainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 517242C6246398A300747ABE /* Firstcontainer.m */; };
+		517242CA246398CD00747ABE /* Secondcontainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 517242C9246398CD00747ABE /* Secondcontainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51635608276C77D6007C5CF9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		5172428B2463901E00747ABE /* makeFragmentContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = makeFragmentContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5172428E2463901F00747ABE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5172428F2463901F00747ABE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +58,10 @@
 		517242B12463902000747ABE /* makeFragmentContainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = makeFragmentContainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		517242B52463902000747ABE /* makeFragmentContainerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = makeFragmentContainerUITests.m; sourceTree = "<group>"; };
 		517242B72463902000747ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517242C5246398A300747ABE /* Firstcontainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firstcontainer.h; sourceTree = "<group>"; };
+		517242C6246398A300747ABE /* Firstcontainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Firstcontainer.m; sourceTree = "<group>"; };
+		517242C8246398CD00747ABE /* Secondcontainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Secondcontainer.h; sourceTree = "<group>"; };
+		517242C9246398CD00747ABE /* Secondcontainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Secondcontainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51635609276C77D6007C5CF9 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51635607276C77D5007C5CF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51635608276C77D6007C5CF9 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		517242822463901E00747ABE = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +105,7 @@
 				517242A92463902000747ABE /* makeFragmentContainerTests */,
 				517242B42463902000747ABE /* makeFragmentContainerUITests */,
 				5172428C2463901E00747ABE /* Products */,
+				51635607276C77D5007C5CF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +133,7 @@
 				5172429C2463902000747ABE /* LaunchScreen.storyboard */,
 				5172429F2463902000747ABE /* Info.plist */,
 				517242A02463902000747ABE /* main.m */,
+				517242C42463985B00747ABE /* containers */,
 			);
 			path = makeFragmentContainer;
 			sourceTree = "<group>";
@@ -135,6 +154,17 @@
 				517242B72463902000747ABE /* Info.plist */,
 			);
 			path = makeFragmentContainerUITests;
+			sourceTree = "<group>";
+		};
+		517242C42463985B00747ABE /* containers */ = {
+			isa = PBXGroup;
+			children = (
+				517242C5246398A300747ABE /* Firstcontainer.h */,
+				517242C6246398A300747ABE /* Firstcontainer.m */,
+				517242C8246398CD00747ABE /* Secondcontainer.h */,
+				517242C9246398CD00747ABE /* Secondcontainer.m */,
+			);
+			path = containers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +300,9 @@
 				517242962463901F00747ABE /* ViewController.m in Sources */,
 				517242902463901F00747ABE /* AppDelegate.m in Sources */,
 				517242A12463902000747ABE /* main.m in Sources */,
+				517242C7246398A300747ABE /* Firstcontainer.m in Sources */,
 				517242932463901F00747ABE /* SceneDelegate.m in Sources */,
+				517242CA246398CD00747ABE /* Secondcontainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4XL58DYFGP;
 				INFOPLIST_FILE = makeFragmentContainer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4XL58DYFGP;
 				INFOPLIST_FILE = makeFragmentContainer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

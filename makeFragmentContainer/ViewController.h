@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <WebKit/WebKit.h>
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *firstContainer;
+- (IBAction)Testbutton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *secondContainer;
+@property (weak, nonatomic) IBOutlet UIButton *Tbutt;
+
+
 
 
 @end
